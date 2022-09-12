@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Moe
 - 👀 I’m interested in Football (the normal one not the american), poltices and tech.
-- 🌱 I’m currently learning diving.
+- 🌱 I’m currently learning diving, Ruby and GraphQL.
 - 💞️ I’m looking to collaborate on cloud projects especially Kubernetes related
 - 📫 You can reach me on Twitter.
 
