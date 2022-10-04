@@ -7,8 +7,6 @@
 
 - 👯 I’m looking to collaborate on **Kubernetes and Cloud Native projects**
 
-- 📝 I regularly write articles on [https://mouismail.github.io/](https://mouismail.github.io/)
-
 - 💬 Ask me about **kubernetes, docker, Go, Prometheus, Github services (Actions, Copilot, etc.)**
 
 - 📫 How to reach me **Twitter**
