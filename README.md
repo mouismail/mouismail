@@ -18,10 +18,4 @@
 
 ---
 
-<div>
- ![Snake animation](https://github.com/mouismail/mouismail/blob/output/github-contribution-grid-snake.svg)
-</div>
-
----
-
 ![](https://komarev.com/ghpvc/?username=mouismail&style=flat-square)
