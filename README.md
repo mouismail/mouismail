@@ -1,21 +1,31 @@
-<h1 align="center">Hi 👋, I'm Mo</h1>
-<h3 align="center">A Senior Solution Architect @Github</h3>
+Account age: **0** years
 
-- 🔭 I’m currently working on **Github and Github Enterprise**
+Pushed **89** commits
 
-- 🌱 I’m currently learning **Ruby, GraphQL**
+Opened **135** issues
 
-- 👯 I’m looking to collaborate on **Kubernetes and Cloud Native projects**
+Submitted **39** pull requests
 
-- 💬 Ask me about **kubernetes, docker, Go, Prometheus, Github services (Actions, Copilot, etc.)**
+Reviewed **1** pull requests
 
-- 📫 How to reach me **Twitter**
+Received **1** stars
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/mouismail" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mouismail" height="30" width="40" /></a>
-</p>
+Own **9** repositories
 
----
+Contributed to **42** public repositories
 
-![](https://komarev.com/ghpvc/?username=mouismail&style=flat-square)
+Top 8 most used languages across your repositories:
+
+![Shell](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%2389e051&message=Shell%EF%B8%B176.1%25)
+![Go](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%2300ADD8&message=Go%EF%B8%B18.4%25)
+![Dockerfile](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23384d54&message=Dockerfile%EF%B8%B17%25)
+![Python](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%233572A5&message=Python%EF%B8%B14.2%25)
+![CSS](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23563d7c&message=CSS%EF%B8%B12.4%25)
+![HTML](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23e34c26&message=HTML%EF%B8%B11.5%25)
+
+Top 4 most used languages across your repositories:
+
+![Shell](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%2389e051&message=Shell%EF%B8%B176.1%25)
+![Go](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%2300ADD8&message=Go%EF%B8%B18.4%25)
+![Dockerfile](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23384d54&message=Dockerfile%EF%B8%B17%25)
+![Other](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23ededed&message=Other%EF%B8%B18.3%25)
