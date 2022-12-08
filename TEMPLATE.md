@@ -1,3 +1,6 @@
+[![Actions Status](https://github.com/mouismail/mouismail/workflows/mouismail-stats/badge.svg)](https://github.com/guilyx/guilyx/mouismail)
+![](https://visitor-badge.glitch.me/badge?page_id=mouismail.mouismail)
+
 Joined Github **{{ ACCOUNT_AGE }}** years ago.
 
 Since then I pushed **{{ COMMITS }}** commits, opened **{{ ISSUES }}** issues, submitted **{{ PULL_REQUESTS }}** pull requests, received **{{ STARS }}** stars across **{{ REPOSITORIES }}** personal projects and contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** public repositories.
