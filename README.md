@@ -14,4 +14,4 @@ Most used languages across my projects:
 ![CSS](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23563d7c&message=CSS%EF%B8%B12.4%25)
 ![HTML](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23e34c26&message=HTML%EF%B8%B11.5%25)
 
-[![Twitter Badge](https://img.shields.io/badge/-@mouismail_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mouismail_)](https://twitter.com/mouismail) [![Linkedin Badge](https://img.shields.io/badge/-mouismail-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mouismail/)](https://www.linkedin.com/in/mouismail/)
+[![Twitter Badge](https://img.shields.io/badge/-@mouismail_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mouismail_)](https://twitter.com/mouismail_) [![Linkedin Badge](https://img.shields.io/badge/-mouismail-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mouismail/)](https://www.linkedin.com/in/mouismail/)
