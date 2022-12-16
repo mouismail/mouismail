@@ -1,9 +1,9 @@
 [![Actions Status](https://github.com/mouismail/mouismail/workflows/mouismail-stats/badge.svg)](https://github.com/guilyx/guilyx/mouismail)
 ![](https://visitor-badge.glitch.me/badge?page_id=mouismail.mouismail)
 
-Joined Github **0** years ago.
+Joined Github **1** years ago.
 
-Since then I pushed **164** commits, opened **139** issues, submitted **45** pull requests, received **5** stars across **9** personal projects and contributed to **43** public repositories.
+Since then I pushed **168** commits, opened **139** issues, submitted **45** pull requests, received **5** stars across **9** personal projects and contributed to **43** public repositories.
 
 Most used languages across my projects:
 
