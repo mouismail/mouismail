@@ -3,7 +3,7 @@
 
 Joined Github **1** years ago.
 
-Since then I pushed **204** commits, opened **139** issues, submitted **47** pull requests, received **5** stars across **9** personal projects and contributed to **43** public repositories.
+Since then I pushed **206** commits, opened **139** issues, submitted **47** pull requests, received **5** stars across **9** personal projects and contributed to **43** public repositories.
 
 Most used languages across my projects:
 
@@ -15,5 +15,6 @@ Most used languages across my projects:
 ![HTML](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23e34c26&message=HTML%EF%B8%B11.3%25)
 ![Makefile](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23427819&message=Makefile%EF%B8%B11.1%25)
 
-
+<div align="center">
 [![GitHub Streak](https://streak-stats.demolab.com?user=mouismail&theme=darcula&hide_border=true&mode=weekly)](https://git.io/streak-stats)
+</div>
