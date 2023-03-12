@@ -1,10 +1,10 @@
 [![Actions Status](https://github.com/mouismail/mouismail/workflows/mouismail-stats/badge.svg)](https://github.com/mouismail/mouismail)
 ![](https://visitor-badge.glitch.me/badge?page_id=mouismail.mouismail)
 
-Joined Github **1** years ago.
+<!-- Joined Github **1** years ago.
 
 Since then I pushed **360** commits, opened **183** issues, submitted **81** pull requests, received **4** stars across **11** personal projects and contributed to **54** public repositories.
-
+ -->
 Most used languages across my projects:
 
 ![Shell](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%2389e051&message=Shell%EF%B8%B149.1%25)
