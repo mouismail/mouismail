@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/mouismail/mouismail/workflows/mouismail-stats/badge.svg)](https://github.com/guilyx/guilyx/mouismail)
+[![Actions Status](https://github.com/mouismail/mouismail/workflows/mouismail-stats/badge.svg)](https://github.com/mouismail/mouismail)
 ![](https://visitor-badge.glitch.me/badge?page_id=mouismail.mouismail)
 
 Joined Github **1** years ago.
