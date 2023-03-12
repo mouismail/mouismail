@@ -21,5 +21,5 @@ Most used languages across my projects:
   
 </div>
 <div align="center">
-![](./profile-3d-contrib/profile-green-animate.svg)
-  </div>
+![](./profile-3d-contrib/profile-south-season-animate.svg)
+ </div>
