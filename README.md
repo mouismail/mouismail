@@ -20,3 +20,6 @@ Most used languages across my projects:
 [![GitHub Streak](https://streak-stats.demolab.com?user=mouismail&theme=darcula&hide_border=true&mode=weekly)](https://git.io/streak-stats)
   
 </div>
+<div align="center">
+![](./profile-3d-contrib/profile-green-animate.svg)
+  </div>
