@@ -17,7 +17,7 @@ Most used languages across my projects:
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=mouismail&theme=darcula&hide_border=true&mode=weekly)](https://git.io/streak-stats)
+<!-- [![GitHub Streak](https://streak-stats.demolab.com?user=mouismail&theme=darcula&hide_border=true&mode=weekly)](https://git.io/streak-stats) -->
 
 </div>
 <div align="center">
