@@ -16,9 +16,9 @@ Most used languages across my projects:
 ![Makefile](https://img.shields.io/static/v1?style=flat-square&label=%E2%A0%80&color=555&labelColor=%23427819&message=Makefile%EF%B8%B10.8%25)
 
 <div align="center">
-  
+
 [![GitHub Streak](https://streak-stats.demolab.com?user=mouismail&theme=darcula&hide_border=true&mode=weekly)](https://git.io/streak-stats)
-  
+
 </div>
 <div align="center">
 ![](./profile-3d-contrib/profile-south-season-animate.svg)
