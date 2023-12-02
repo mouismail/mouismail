@@ -5,24 +5,33 @@ class Tree:
         self.r = r
 
 def solution(T, leaf_id):
-    # Helper function to recursively reroot the tree
-    def reroot_rec(node, parent=None):
+    # Helper function to recursively find the leaf node and its parents
+    def find_leaf_and_parents(node, parent=None):
         if node is None:
-            return None
+            return None, []
         if node.x == leaf_id:
-            return node
+            return node, [parent]
         # Recur for the left and right subtrees
-        left_child = reroot_rec(node.l, node)
-        right_child = reroot_rec(node.r, node)
-        # If the new root was found in the left or right subtree
-        if left_child:
-            node.l = parent
-            return node
-        if right_child:
-            node.r = parent
-            return node
-        return None
+        left_leaf, left_parents = find_leaf_and_parents(node.l, node)
+        if left_leaf:
+            return left_leaf, [parent] + left_parents
+        right_leaf, right_parents = find_leaf_and_parents(node.r, node)
+        if right_leaf:
+            return right_leaf, [parent] + right_parents
+        return None, []
 
-    # Start the rerooting process
-    new_root = reroot_rec(T)
-    return new_root
+    # Find the leaf node and its parents
+    leaf_node, parents = find_leaf_and_parents(T)
+    # Reroot the tree by reversing the parent-child relationship
+    for i in range(len(parents) - 1):
+        if parents[i].l is parents[i + 1]:
+            parents[i].l = parents[i - 1] if i > 0 else None
+        else:
+            parents[i].r = parents[i - 1] if i > 0 else None
+    if parents[-1].l is leaf_node:
+        parents[-1].l = parents[-2] if len(parents) > 1 else None
+    else:
+        parents[-1].r = parents[-2] if len(parents) > 1 else None
+    leaf_node.l = leaf_node.r = None
+    leaf_node.l = parents[0] if parents else None
+    return leaf_node
