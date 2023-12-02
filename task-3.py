@@ -1,45 +1,53 @@
 class Tree:
-    """
-    This class represents a binary tree node.
-    """
-    def __init__(self, x, l=None, r=None):
+    def __init__(self, x, left=None, right=None):
         self.x = x
-        self.l = l
-        self.r = r
+        self.l = left
+        self.r = right
 
-def solution(tree, leaf_id):
-    """
-    This function reroots the tree at the specified leaf node.
-    """
-    def find_path(node, leaf_id, path):
-        """
-        This helper function finds the path from the root to the leaf node.
-        """
-        if node is None:
-            return False
-        path.append(node)
-        if node.x == leaf_id or find_path(node.l, leaf_id, path) or find_path(node.r, leaf_id, path):
-            return True
-        path.pop()
-        return False
+def solution(T, leaf_id):
+    # Base case: if the current node is null, return null.
+    if T is None:
+        return None, None
 
-    # Reversing the parent-child relationship
-    def reverse_relationship(path):
-        for i in range(len(path) - 1, 0, -1):
-            current = path[i]
-            parent = path[i - 1]
+    # If the current node is the leaf we want to reroot at
+    if T.x == leaf_id:
+        # This node will be the new root, so its parent will be None
+        return T, None
 
-            # Make the parent a child of the current node
-            if parent.l == current:
-                parent.l = None
-                current.r, parent.r = parent, current.r
-            elif parent.r == current:
-                parent.r = None
-                current.l, parent.l = parent, current.l
+    # Recursively reroot left and right subtrees
+    left_subtree, from_left = reroot_tree(T.l, leaf_id)
+    right_subtree, from_right = reroot_tree(T.r, leaf_id)
 
-        # The last node in the path is the new root
-        return path[-1]
+    # If the leaf was found and returned from the left subtree
+    if from_left:
+        # The current node's left subtree becomes the one that was originally on the right
+        from_left.r = T.r
+        # The current node becomes the right subtree of the leaf
+        T.r = None  # Disconnect the current node from its parent
+        T.l = right_subtree  # The original right subtree becomes the new left subtree
+        from_left.l = T
+        return from_left, T
 
-    path = []
-    find_path(tree, leaf_id, path)
-    return reverse_relationship(path) if path else None
+    # Similarly, if the leaf was found and returned from the right subtree
+    if from_right:
+        # The current node's right subtree becomes the one that was originally on the left
+        from_right.l = T.l
+        # The current node becomes the left subtree of the leaf
+        T.l = None  # Disconnect the current node from its parent
+        T.r = left_subtree  # The original left subtree becomes the new right subtree
+        from_right.r = T
+        return from_right, T
+
+    # If the leaf has not been found yet, return the current node and its subtrees as they are
+    T.l = left_subtree
+    T.r = right_subtree
+    return T, None
+
+# Function to print the tree for checking the rerooted structure
+def print_tree(T, indent=0):
+    if T is not None:
+        print(' ' * indent + str(T.x))
+        print_tree(T.l, indent + 4)
+        print_tree(T.r, indent + 4)
+
+
