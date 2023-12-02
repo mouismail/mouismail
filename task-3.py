@@ -2,10 +2,10 @@ class Tree:
   """
   This class represents a binary tree node.
   """
-  def __init__(self, x, left=None, right=None):
+  def __init__(self, x, l=None, r=None):
     self.x = x
-    self.l = left
-    self.r = right
+    self.l = l
+    self.r = r
 
 def reroot(node, parent):
   if node is None:
@@ -14,57 +14,38 @@ def reroot(node, parent):
   node.l = None
   return new_node
 
-
 def solution(tree, leaf_id):
   """
   This function reroots the tree at the specified leaf node.
   """
-  # Helper function to convert tuple to Tree
-  def tuple_to_tree(node_tuple):
-    # Base case: if the input is None, return None to signify an empty tree.
-    if node_tuple is None:
-        return None
-    # If the input is already a Tree instance, return it as is.
-    if isinstance(node_tuple, Tree):
-        return node_tuple
-    # Otherwise, recursively convert tuples to Tree instances.
-    return Tree(
-        x=node_tuple[0],
-        left=tuple_to_tree(node_tuple[1]),
-        right=tuple_to_tree(node_tuple[2])
-    )
-  # Helper function to find and reroot the tree
   def find_and_reroot(current, parent, leaf_id):
     if current is None:
       return None
     if current.x == leaf_id:
       return reroot(current, parent)
-    # Move left subtree up, if the leaf is in the left subtree
     left = find_and_reroot(current.l, Tree(current.x, parent, current.r), leaf_id)
     if left:
       return left
-    # Move right subtree up, if the leaf is in the right subtree
     right = find_and_reroot(current.r, Tree(current.x, current.l, parent), leaf_id)
     if right:
       return right
     return None
 
-  tree = tuple_to_tree(tree)
   return find_and_reroot(tree, None, leaf_id)
 
 # Function to print the tree for verification purposes
 def print_tree(node, level=0):
-    if node is not None:
-        print_tree(node.r, level + 1)
-        print(' ' * 4 * level + '->', node.x)
-        print_tree(node.l, level + 1)
+  if node is not None:
+    print_tree(node.r, level + 1)
+    print(' ' * 4 * level + '->', node.x)
+    print_tree(node.l, level + 1)
 
-# Convert the tuple to Tree instances
-tree_as_tuple = (3, (1, (2, None, None), (6, None, None)), (5, None, (4, None, None)))
+# Create the tree using Tree instances
+tree = Tree(3, Tree(1, Tree(2), Tree(6)), Tree(5, None, Tree(4)))
 leaf_id_to_reroot = 2
 
-# Call the solution function with the tuple representation
-new_root = solution(tree_as_tuple, leaf_id_to_reroot)
+# Call the solution function with the Tree instance
+new_root = solution(tree, leaf_id_to_reroot)
 
 # Print the rerooted tree
 print_tree(new_root)
