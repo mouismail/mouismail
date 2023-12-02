@@ -1,5 +1,3 @@
-from collections import deque
-
 class Tree:
     """
     This class represents a binary tree node.
@@ -27,7 +25,7 @@ def solution(tree, leaf_id):
         path.pop()
         return False
 
-    path = deque()
+    path = []
     find_path(tree, path)
 
     for i in range(len(path) - 1, 0, -1):
@@ -50,4 +48,3 @@ def solution(tree, leaf_id):
     if path:
         path[-1].l = path[-1].r = None
         return path[-1]
-    return None
