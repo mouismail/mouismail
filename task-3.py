@@ -21,12 +21,18 @@ def solution(tree, leaf_id):
   """
   # Helper function to convert tuple to Tree
   def tuple_to_tree(node_tuple):
+    # Base case: if the input is None, return None to signify an empty tree.
     if node_tuple is None:
         return None
+    # If the input is already a Tree instance, return it as is.
     if isinstance(node_tuple, Tree):
         return node_tuple
-    return Tree(node_tuple[0], tuple_to_tree(node_tuple[1]), tuple_to_tree(node_tuple[2]))
-
+    # Otherwise, recursively convert tuples to Tree instances.
+    return Tree(
+        x=node_tuple[0],
+        left=tuple_to_tree(node_tuple[1]),
+        right=tuple_to_tree(node_tuple[2])
+    )
   # Helper function to find and reroot the tree
   def find_and_reroot(current, parent, leaf_id):
     if current is None:
