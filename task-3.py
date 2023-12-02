@@ -4,7 +4,7 @@ class Tree:
         self.l = None
         self.r = None
 
-def solution(T, leaf_id):
+def solution(tree, leaf_id):
     # Helper function to recursively reroot the tree
     def reroot_rec(node, parent):
         if node is None:
@@ -24,24 +24,24 @@ def solution(T, leaf_id):
                 new_root.l = left_child
                 new_root.r = right_child
             return new_root, parent
-        else:
-            # Recur for the left and right subtrees
-            left_child, from_left = reroot_rec(node.l, node)
-            right_child, from_right = reroot_rec(node.r, node)
-            # If the new root was found in the left or right subtree
-            if from_left or from_right:
-                # Add the current node as a child to the new root
-                if from_left:
-                    from_left.r = Tree(node.x, right_child, None)
-                else:
-                    from_left.l = Tree(node.x, None, left_child)
-                return from_left, node
+
+        # Recur for the left and right subtrees
+        left_child, from_left = reroot_rec(node.l, node)
+        right_child, from_right = reroot_rec(node.r, node)
+        # If the new root was found in the left or right subtree
+        if from_left or from_right:
+            # Add the current node as a child to the new root
+            if from_left:
+                from_left.r = Tree(node.x, right_child, None)
             else:
-                # Return the current node if the new root is not part of this subtree
-                return Tree(node.x, left_child, right_child), None
-    
+                from_left.l = Tree(node.x, None, left_child)
+            return from_left, node
+
+        # Return the current node if the new root is not part of this subtree
+        return Tree(node.x, left_child, right_child), None
+
     # Start the rerooting process
-    new_root, _ = reroot_rec(T, None)
+    new_root, _ = reroot_rec(tree, None)
     return new_root
 
 # Create a binary tree as per the provided structure
