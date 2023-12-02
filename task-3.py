@@ -1,60 +1,53 @@
-from extratypes import Tree  # Import the Tree class from extratypes module
+from collections import deque
+
+class Tree:
+    """
+    This class represents a binary tree node.
+    """
+    def __init__(self, x, l=None, r=None):
+        self.x = x
+        self.l = l
+        self.r = r
 
 def solution(tree, leaf_id):
     """
     This function reroots the tree at the specified leaf node.
     """
-    # Helper function to recursively find the path from root to the leaf
-    def find_path(node, leaf_id, path):
+    def find_path(node, path):
+        """
+        This helper function finds the path from the root to the leaf node.
+        """
         if node is None:
             return False
+        path.append(node)
         if node.x == leaf_id:
-            path.append(node)
             return True
-        if find_path(node.l, leaf_id, path) or find_path(node.r, leaf_id, path):
-            path.append(node)
+        if find_path(node.l, path) or find_path(node.r, path):
             return True
+        path.pop()
         return False
 
-    # Reverse the parent-child relationship along the path
-    def reverse_relationship(path):
-        new_root = path[-1]
-        for i in range(len(path) - 1, 0, -1):
-            current = path[i]
-            parent = path[i - 1]
+    path = deque()
+    find_path(tree, path)
 
-            # Determine if current is left or right child of parent
-            if parent.l == current:
-                parent.l = None
-                # Move parent's right subtree to current's left if it's empty
-                if current.l is None:
-                    current.l = parent.r
-                else:
-                    # Find the rightmost node of current's left subtree
-                    rightmost = current.l
-                    while rightmost.r is not None:
-                        rightmost = rightmost.r
-                    rightmost.r = parent.r
-                parent.r = current
-            elif parent.r == current:
-                parent.r = None
-                # Move parent's left subtree to current's right if it's empty
-                if current.r is None:
-                    current.r = parent.l
-                else:
-                    # Find the leftmost node of current's right subtree
-                    leftmost = current.r
-                    while leftmost.l is not None:
-                        leftmost = leftmost.l
-                    leftmost.l = parent.l
-                parent.l = current
+    for i in range(len(path) - 1, 0, -1):
+        current_node = path[i]
+        parent_node = path[i - 1]
+        # Swap children and parent
+        if parent_node.l == current_node:
+            parent_node.l = parent_node.r
+            parent_node.r = None
+        else:
+            parent_node.r = parent_node.l
+            parent_node.l = None
 
-        return new_root
+        if current_node.l is None:
+            current_node.l = parent_node
+        else:
+            current_node.r = parent_node
 
-    path = []
-    find_path(tree, leaf_id, path)
-    return reverse_relationship(path) if path else None
-
-# Example usage
-root = Tree(3, Tree(1, Tree(2), Tree(6)), Tree(5, None, Tree(4)))
-new_root = solution(root, 2)
+    # The last node in the path is the new root
+    if path:
+        path[-1].l = path[-1].r = None
+        return path[-1]
+    return None
