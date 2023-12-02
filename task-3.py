@@ -15,8 +15,8 @@ def solution(T, leaf_id):
         return T, None
 
     # Recursively reroot left and right subtrees
-    left_subtree, from_left = reroot_tree(T.l, leaf_id)
-    right_subtree, from_right = reroot_tree(T.r, leaf_id)
+    left_subtree, from_left = solution(T.l, leaf_id)
+    right_subtree, from_right = solution(T.r, leaf_id)
 
     # If the leaf was found and returned from the left subtree
     if from_left:
