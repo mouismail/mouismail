@@ -16,17 +16,24 @@ def solution(tree, leaf_id):
 
     # Reversing the parent-child relationship
     def reverse_relationship(path):
-        new_root = path[-1]
         for i in range(len(path) - 1, 0, -1):
             current = path[i]
             parent = path[i - 1]
+            # Swap children and parent
             if parent.l == current:
-                parent.l = None
                 current.r = parent
-            else:
+                parent.l = parent.r
                 parent.r = None
+            else:
                 current.l = parent
-        return new_root
+                parent.r = parent.l
+                parent.l = None
+
+        # Handle the root of the tree
+        if path:
+            path[-1].l = path[-1].r = None
+            return path[-1]
+        return None
 
     path = []
     find_path(tree, leaf_id, path)
