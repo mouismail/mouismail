@@ -8,11 +8,11 @@ class Tree:
     self.r = right
 
 def reroot(node, parent):
-    if node is None:
-        return parent
-    new_root = reroot(node.l, Tree(node.x, node.r, parent))
-    node.l = None
-    return new_root
+  if node is None:
+    return parent
+  new_node = reroot(node.l, Tree(node.x, node.r, parent))
+  node.l = None
+  return new_node
 
 
 def solution(tree, leaf_id):
@@ -22,7 +22,9 @@ def solution(tree, leaf_id):
   # Helper function to convert tuple to Tree
   def tuple_to_tree(node_tuple):
     if node_tuple is None:
-      return None
+        return None
+    if isinstance(node_tuple, Tree):
+        return node_tuple
     return Tree(node_tuple[0], tuple_to_tree(node_tuple[1]), tuple_to_tree(node_tuple[2]))
 
   # Helper function to find and reroot the tree
