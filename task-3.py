@@ -14,25 +14,25 @@ def solution(tree, leaf_id):
         path.pop()
         return False
 
-    # Reversing the parent-child relationship
+    # Reverse the parent-child relationship along the path
     def reverse_relationship(path):
         for i in range(len(path) - 1, 0, -1):
             current = path[i]
             parent = path[i - 1]
-            # Swap children and parent
-            if parent.l == current:
-                current.r = parent
-                parent.l = parent.r
-                parent.r = None
-            else:
-                current.l = parent
-                parent.r = parent.l
-                parent.l = None
 
-        # Handle the root of the tree
+            # Check which side the current node is on and adjust accordingly
+            if parent.l == current:
+                parent.l = current.r
+                current.r = parent
+            elif parent.r == current:
+                parent.r = current.l
+                current.l = parent
+
+        # The last node in the path is the new root
         if path:
-            path[-1].l = path[-1].r = None
-            return path[-1]
+            new_root = path[-1]
+            new_root.l = new_root.r = None
+            return new_root
         return None
 
     path = []
