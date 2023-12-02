@@ -31,17 +31,11 @@ def solution(T, leaf_id):
             # If the new root was found in the left or right subtree
             if from_left:
                 # Add the current node as a child to the new root
-                if node.r:
-                    from_left.r = Tree(node.x, None, node.r)
-                else:
-                    from_left.l = Tree(node.x, node.l, None)
+                from_left.r = Tree(node.x, None, right_child if node.l is from_left else left_child)
                 return from_left, None
             elif from_right:
                 # Add the current node as a child to the new root
-                if node.l:
-                    from_right.l = Tree(node.x, node.l, None)
-                else:
-                    from_right.r = Tree(node.x, None, node.r)
+                from_right.l = Tree(node.x, left_child if node.r is from_right else right_child, None)
                 return from_right, None
             else:
                 # Return the current node if the new root is not part of this subtree
