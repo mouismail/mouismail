@@ -4,7 +4,7 @@ class Tree:
         self.l = None
         self.r = None
 
-def solution(tree, leaf_id):
+def solution(T, leaf_id):
     # Helper function to recursively reroot the tree
     def reroot_rec(node, parent):
         if node is None:
@@ -16,32 +16,25 @@ def solution(tree, leaf_id):
                 # Disconnect the parent from this node
                 if parent.l is node:
                     parent.l = None
+                    parent_child = parent.r
                 else:
                     parent.r = None
+                    parent_child = parent.l
                 # Recursively continue rerooting with the parent
                 left_child, right_child = reroot_rec(parent, None)
                 # Add parent as a child to the new root
-                new_root.l = left_child
-                new_root.r = right_child
-            return new_root, parent
-
-        # Recur for the left and right subtrees
-        left_child, from_left = reroot_rec(node.l, node)
-        right_child, from_right = reroot_rec(node.r, node)
-        # If the new root was found in the left or right subtree
-        if from_left or from_right:
-            # Add the current node as a child to the new root
-            if from_left:
-                from_left.r = Tree(node.x, right_child, None)
-            else:
-                from_left.l = Tree(node.x, None, left_child)
-            return from_left, node
-
-        # Return the current node if the new root is not part of this subtree
-        return Tree(node.x, left_child, right_child), None
-
+                new_root.l = left_child if parent_child is not node else right_child
+                new_root.r = right_child if parent_child is not node else left_child
+            return new_root
+        else:
+            # Recur for the left and right subtrees
+            left_child = reroot_rec(node.l, node)
+            right_child = reroot_rec(node.r, node)
+            # Return the current node with its subtrees
+            return Tree(node.x, left_child, right_child)
+    
     # Start the rerooting process
-    new_root, _ = reroot_rec(tree, None)
+    new_root = reroot_rec(T, None)
     return new_root
 
 # Create a binary tree as per the provided structure
