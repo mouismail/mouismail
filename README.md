@@ -1,4 +1,4 @@
-<h3 align="left">Hi 👋! My name is Mou and I'm a Sr. Solution Architect @GitHub </h3>
+#### Hi 👋! My name is Mou and I'm a Sr. Solution Architect @GitHub 
 
 ###
 
