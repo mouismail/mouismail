@@ -1,75 +1,47 @@
-<!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
+<h2 align="left">Hi 👋! My name is ... and I'm a ..., from ....</h2>
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
+###
 
-**🐱 My GitHub Data** 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mouismail&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=true" height="150" alt="stats graph"  />
+  <img src="https://streak-stats.demolab.com?user=mouismail&locale=en&mode=daily&theme=default&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mouismail&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=false" height="150" alt="languages graph"  />
+</div>
 
-> 📦 125.1 kB Used in GitHub's Storage 
- > 
-> 🏆 69 Contributions in the Year 2024
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 34 Public Repositories 
- > 
-> 🔑 17 Private Repositories 
- > 
-**I'm an Early 🐤** 
+###
 
-```text
-🌞 Morning                179 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.12 % 
-🌆 Daytime                975 commits         ███████████████░░░░░░░░░░   60.56 % 
-🌃 Evening                294 commits         █████░░░░░░░░░░░░░░░░░░░░   18.26 % 
-🌙 Night                  162 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.06 % 
-```
-📅 **I'm Most Productive on Friday** 
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="30" alt="go logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="30" alt="kubernetes logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="30" alt="azure logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" height="30" alt="argocd logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" height="30" alt="grafana logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="30" alt="prometheus logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="30" alt="terraform logo"  />
+</div>
 
-```text
-Monday                   202 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.55 % 
-Tuesday                  198 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.30 % 
-Wednesday                84 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.22 % 
-Thursday                 316 commits         █████░░░░░░░░░░░░░░░░░░░░   19.63 % 
-Friday                   557 commits         █████████░░░░░░░░░░░░░░░░   34.60 % 
-Saturday                 112 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.96 % 
-Sunday                   141 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.76 % 
-```
+###
 
+<br clear="both">
 
-📊 **This Week I Spent My Time On** 
+<img src="https://raw.githubusercontent.com/mouismail/mouismail/output/snake.svg" alt="Snake animation" />
 
-```text
-🕑︎ Time Zone: Europe/Berlin
-
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-
-💻 Operating System: 
-No Activity Tracked This Week
-```
-
-**I Mostly Code in JavaScript** 
-
-```text
-JavaScript               8 repos             ███████░░░░░░░░░░░░░░░░░░   28.57 % 
-Shell                    7 repos             ██████░░░░░░░░░░░░░░░░░░░   25.00 % 
-Go                       3 repos             ███░░░░░░░░░░░░░░░░░░░░░░   10.71 % 
-Python                   3 repos             ███░░░░░░░░░░░░░░░░░░░░░░   10.71 % 
-Dockerfile               2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   07.14 % 
-```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/mouismail/mouismail/main/assets/bar_graph.png)
-
-
- Last Updated on 10/02/2024 18:34:15 UTC
-<!--END_SECTION:waka-->
+###
